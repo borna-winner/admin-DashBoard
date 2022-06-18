@@ -1,93 +1,128 @@
 .planet{
     background-color: lightgray;
     display: grid;
-    grid-template-columns: 20%vw 30%vw 30%vw 20%vw;
-    column-gap: 15px;
-    grid-template-rows: 100px 150px 300px 250px;
+    grid: 10vh
+          10vh
+          22.5vh 
+          22.5vh
+          22.5vh / 15vw 15vw 15vw 15vw 15vw;
+    grid-row-gap: 2.1vh;
+    grid-column-gap: 1vw;
+    grid-auto-flow: row; 
+    justify-content: center;
+
 }
 .dashBoardGrid{
-    grid-area: 1/1/5/2;
-    background-color: #0ea5e9;
-    text-decoration: none;
-    color: white;
-    
-}
-
-.search{
-    margin-top: 20px;
-    margin-left: 50px;
-    grid-area: 1/2/2/4;
-}
-.search input[type=text]{
-    width:500px;
-    height:25px;
-    border-radius:25px;
-    border: none;
-}
-.Name{
-    font-size: 24px;
-    align-self: center;
-    margin-left: 25px;
-}
-.search button{
-    float: left;
-    cursor: pointer;
-    height: 50px;
-    width: 50px;
-}
-.topBox{
-    margin-left: -15px;
     display: grid;
-    grid-area: 1/2/3/5;
-    background-color: aliceblue;
+    grid-area: 1/1/6/2;
+    background-color: rgb(2, 104, 104);
+    color: white;
+    justify-items: center;
 }
-
-.dashBoard{
-    display: flex;
-    justify-content: center;
-    font-size: 32px;
-    font-weight: 800;
-    margin-top: 20px;
-}
-.dashBoardItems{
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-    font-weight: 700;
+.searchBar{
+    display: grid;
+    grid-area: 1/2/2/3;
+    
 }
 .notifcation{
-    margin-top: 25px;
-    mix-blend-mode: multiply;
-}
-.topRightInfo{
-    grid-area: 1/4/2/5;
-    display: flex;
-    
-}
-.underSearchBar{
-    display: flex;
-    grid-area: 2/2/2/2;
-    align-items: center;
+    align-self: center;
 }
 .cat{
-    mix-blend-mode: multiply;
+    align-self: center;
+
 }
-.topRightButtons{
-    grid-area: 2/4/2/5;
+.Name{
+
+    justify-self: center;
+    font-size: 3vw;
+}
+.topRightInfo{
+    grid-area: 1/4/2/6;
     display: flex;
-    height: 50px;
-    justify-content: space-between;
-    
+    justify-content: center;
+}
+.underSearchBar{
+    grid-area: 2/2/2/3;
+    grid-column: span 2;
+    justify-content: center;
+    align-self: center;
+    display: flex;
+}
+.topUnderRightButtons{
+    grid-area: 2/4/3/6;
+    justify-self: center;
+    align-self: center;
+
+}
+.announcements{
+    display: grid;
+    justify-items: center;
+    grid-area: 3/5/6/6;
+    background-color: crimson;
+}
+.Trending{
+    grid-area: 5/5/6/6;
 }
 .rightButtons {
-    font-weight: 700;
-    font-size: 20px;
-    color: white;
-    border-radius: 25px;
-    margin-right: 20px;
-    background-color: #0ea5e9;
-    border: 2px solid #0ea5e9;
-    width: 100px;
-    height: 50px;
-    margin-top: 50px;
+  margin: 2vh; 
+  padding: 1vw 2vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
+   background-origin: border-box;
+  box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  font-size: 3vh;
+}
+.Projects{
+    display: grid;
+    grid-area: 3/2/6/5;
+    grid: 22vh
+          22vh
+          22vh  / 15vw 15vw 15vw;
+    grid-row-gap: 2.1vh;
+    grid-column-gap: 1vw;
+}
+.ProjectChilds{
+    height: auto;
+    width: auto;
+box-shadow: blue 0px 0px 0px 2px inset;
+background-color: white;
+box-shadow: yellow -5px -5px;}
+.rightButtons:hover {
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
+}
+img{
+    mix-blend-mode: multiply;
+}
+h3{
+    justify-content: center;
+    justify-self: center;
+    margin: 1vh;
+}
+h2{
+    margin: 1vh; 
+    font-size: 1.7vw;
+    display: Grid;
+    align-content: center;
+    justify-content: center;
+}
+h1{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-size: 2vw;
+}
+p{
+    margin-left: 2px;
+    margin-right: 2px;
+    margin: 0px;
+    display: flex;
+    font-size: 1.1vw;
+    justify-content: center;
 }
