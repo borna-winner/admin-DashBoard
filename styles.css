@@ -1,15 +1,19 @@
 .planet{
     background-color: lightgray;
     display: grid;
-    grid: 10vh
-          10vh
-          22.5vh 
-          22.5vh
-          22.5vh / 15vw 15vw 15vw 15vw 15vw;
+    grid: 1fr
+          1fr
+          2.25fr 
+          2.25fr
+          2.25fr / 1fr 1fr 1fr 1fr 1fr;
     grid-row-gap: 2.1vh;
     grid-column-gap: 1vw;
     grid-auto-flow: row; 
     justify-content: center;
+
+}
+.dashBoardItems{
+    font-size: 1.5rem;
 
 }
 .dashBoardGrid{
@@ -19,10 +23,14 @@
     color: white;
     justify-items: center;
 }
-.searchBar{
-    display: grid;
-    grid-area: 1/2/2/3;
-    
+.trendingItem{
+    font-size: 1.5em;
+    display: inline;
+}
+.trendingContainer{
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
 }
 .notifcation{
     align-self: center;
@@ -34,7 +42,7 @@
 .Name{
 
     justify-self: center;
-    font-size: 3vw;
+    font-size: 4vh;
 }
 .topRightInfo{
     grid-area: 1/4/2/6;
@@ -55,47 +63,69 @@
 
 }
 .announcements{
+    background-color: white;
+    border: solid grey 5px;
+    padding: 1.4vh;
     display: grid;
-    justify-items: center;
+    justify-content: center;
     grid-area: 3/5/6/6;
-    background-color: crimson;
-}
-.Trending{
-    grid-area: 5/5/6/6;
 }
 .rightButtons {
-  margin: 2vh; 
-  padding: 1vw 2vh;
-  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
-  border-radius: 6px;
-  border: none;
-  color: #fff;
-  background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
-   background-origin: border-box;
-  box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  font-size: 3vh;
-}
+    transition:  1s ease-out 0.25s; 
+    margin: 2vh; 
+    padding: 1vw 2vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
+     background-origin: border-box;
+    box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    font-size: 3vh;
+}   
 .Projects{
     display: grid;
     grid-area: 3/2/6/5;
-    grid: 22vh
-          22vh
-          22vh  / 15vw 15vw 15vw;
+    grid: 2.2fr
+          2.2fr
+          2.2fr / 1.5fr 1.5fr 1.5fr;
     grid-row-gap: 2.1vh;
     grid-column-gap: 1vw;
 }
-.ProjectChilds{
-    height: auto;
-    width: auto;
-box-shadow: blue 0px 0px 0px 2px inset;
+.ProjectChilds{ 
 background-color: white;
-box-shadow: yellow -5px -5px;}
+box-shadow: orange -5px -5px;}
 .rightButtons:hover {
   box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  background-color: orange;
   outline: 0;
+}
+.notSoCoolProject{
+    box-shadow: orange 0px -5px;
+}
+.awesomeProject{
+    box-shadow: orange 5px -5px;
+}
+.impossibleProject{
+    box-shadow: orange -5px 0px;
+}
+.easyPeasyProject{
+    box-shadow: orange 5px 5px , orange -5px -5px;
+}
+.justCoolProject{
+    box-shadow: orange 5px 0px;
+}
+.moneyManProject{
+    box-shadow: orange -5px 5px;
+}
+.yetAnotherMoney{
+    box-shadow: orange 0px 5px;
+}
+.selfReflection{
+    box-shadow: orange 5px 5px;
 }
 img{
     mix-blend-mode: multiply;
@@ -119,10 +149,11 @@ h1{
     font-size: 2vw;
 }
 p{
+    padding: 3px;
     margin-left: 2px;
     margin-right: 2px;
     margin: 0px;
-    display: flex;
-    font-size: 1.1vw;
+    display: grid;
+    font-size: 1.05vw;
     justify-content: center;
 }
